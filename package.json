@@ -1,0 +1,24 @@
+{
+  "name": "csv2tblpdf",
+  "version": "0.8.0",
+  "description": "Convert CSV data into a table and output as a PDF.",
+  "main": "csv2tblpdf.js",
+  "scripts": {
+    "prepare": "gulp copyFonts && (cd node_modules/pdfmake && npm i && gulp buildFonts)",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ken Kurosaki",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "fast-csv": "^4.3.1",
+    "html-to-pdfmake": "^2.0.10",
+    "jsdom": "^16.3.0",
+    "pdfmake": "^0.1.67",
+    "roboto-npm-webfont": "^1.0.1",
+    "typeface-mplus-1p": "^0.1.63"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
